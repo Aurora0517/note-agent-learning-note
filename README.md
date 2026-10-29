@@ -32,3 +32,11 @@ git pull --rebase
 `scripts/publish.sh` 等价于 `git add -A && git commit -m "<msg>" && git push`。
 
 > 所有学习计划创建或更新后，一律提交并推送到 `origin/main`，本地不长期留存未推送内容。
+
+## 本机环境说明
+
+本机 SSH 22 端口被封、HTTPS 到 GitHub 偶发 `Empty reply from server`，因此：
+
+- remote 使用 `ssh://git@ssh.github.com:443/Aurora0517/note-agent-learning-note.git`
+- 仓库内已设置 `core.sshCommand`（走 443 端口，known_hosts 存放在 `.git/ssh_known_hosts`）
+- 换机器时需重新添加 SSH 公钥到 GitHub（仓库 Settings → Deploy keys，需勾选 Allow write access）

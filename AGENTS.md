@@ -1,7 +1,10 @@
 # AGENTS.md — 仓库写作与上传规则
 
 本仓库是用户的学习计划 / 学习笔记仓库，远程地址：
-`https://github.com/Aurora0517/note-agent-learning-note.git`（分支 `main`）。
+`ssh://git@ssh.github.com:443/Aurora0517/note-agent-learning-note.git`（分支 `main`）。
+
+> 本机网络封了 22 端口、HTTPS 到 GitHub 偶发断连，因此 remote 走 SSH + 443 端口。
+> 仓库已配置 `core.sshCommand` 指向 `ssh.github.com:443`，直接 `git push` 即可，不要改回 HTTPS。
 
 ## 硬性规则
 
