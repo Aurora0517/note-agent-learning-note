@@ -3,3 +3,8 @@
 .idea/
 .vscode/
 node_modules/
+
+# 密钥与本地配置
+.env
+.env.*
+!.env.example
